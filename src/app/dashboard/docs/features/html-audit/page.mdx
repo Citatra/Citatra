@@ -1,0 +1,57 @@
+export const metadata = { title: "HTML Audit" }
+
+<SectionLabel>Technical Analysis</SectionLabel>
+
+# HTML Audit
+
+<Subtitle>Analyze your pages for technical HTML issues that may affect AI Overview eligibility.</Subtitle>
+
+## Overview
+
+The HTML Audit scans pages in your tracking results for technical issues that can affect how AI systems parse and evaluate your content. Even high-quality content can be overlooked by AI Overviews if the underlying HTML has structural problems that make extraction difficult.
+
+## What Gets Checked
+
+The audit evaluates each page across several technical dimensions:
+
+- **Heading hierarchy** — proper use of h1 through h6 tags in logical order
+- **Meta descriptions** — presence, length, and relevance
+- **Structured data validity** — checks existing JSON-LD or microdata for errors
+- **Content accessibility** — alt attributes, ARIA labels, and semantic HTML usage
+- **Page speed indicators** — large images, render-blocking resources, and excessive DOM size
+- **Mobile-friendliness** — viewport configuration and responsive layout signals
+- **Canonical URL** — proper canonical tag implementation to avoid duplicate content issues
+
+## Audit Results
+
+Results are organized into three severity categories:
+
+- **Critical** — issues that actively block AI parsing of your content. These should be fixed immediately.
+- **Warning** — issues that may reduce the likelihood of being cited in AI Overviews. Address these after resolving critical items.
+- **Info** — suggestions for improvement that can enhance your content's AI-readiness over time.
+
+Each reported issue includes the **element** affected, a description of the **problem**, and a recommended **fix** with specific guidance.
+
+## Running an Audit
+
+1. Select a page URL from your tracked results
+2. Click **Audit** to start the analysis
+3. Wait for the scan to complete — typically a few seconds per page
+4. Review the categorized results and prioritize fixes
+
+Re-run the audit after making changes to confirm that issues have been resolved.
+
+## Common Issues
+
+The most frequently detected issues include:
+
+- **Missing h1** — pages without a primary heading make it harder for AI to identify the main topic
+- **Multiple h1 tags** — more than one h1 creates ambiguity about the page's primary subject
+- **Missing meta description** — reduces the context available to AI models during evaluation
+- **Broken structured data** — syntax errors in JSON-LD that prevent proper parsing
+- **Missing alt attributes** — images without descriptive alt text reduce content accessibility
+- **Slow page load** — pages that load slowly may be deprioritized by AI systems during content selection
+
+<Tip>Run audits on your most-cited pages first — fixing issues on high-visibility pages has the biggest impact.</Tip>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/schema-generator", label: "Schema Generator" }} next={{ href: "/dashboard/docs/features/geo-audit", label: "GEO Audit" }} />

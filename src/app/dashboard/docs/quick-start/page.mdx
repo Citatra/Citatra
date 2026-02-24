@@ -1,0 +1,82 @@
+export const metadata = { title: "Quick Start — Citatra" }
+
+<SectionLabel>Getting Started</SectionLabel>
+
+# Quick Start
+
+<Subtitle>Get Citatra up and running and start monitoring your AI Overview visibility in under 5 minutes.</Subtitle>
+
+## Prerequisites
+
+Before you begin, make sure you have the following installed and ready:
+
+- **Node.js 18+** — [download from nodejs.org](https://nodejs.org)
+- **MongoDB** — a running MongoDB instance or a [MongoDB Atlas](https://www.mongodb.com/atlas) cluster
+- **SerpApi key** — required for fetching AI Overview results
+- **Gemini API key** (optional) — enables AI-powered recommendations and semantic analysis
+
+<Info>SerpApi is required for fetching AI Overview results. Sign up at [serpapi.com](https://serpapi.com) to get your API key.</Info>
+
+## Installation
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-org/citatra.git
+cd citatra
+```
+
+```bash
+npm install
+```
+
+## Environment Variables
+
+Create a `.env.local` file in the project root with the following variables:
+
+```bash
+# MongoDB connection string
+MONGODB_URI=mongodb+srv://user:password@cluster.mongodb.net/citatra
+
+# SerpApi key for AI Overview tracking
+SERPAPI_KEY=your_serpapi_key_here
+
+# NextAuth authentication
+NEXTAUTH_SECRET=your_random_secret_here
+NEXTAUTH_URL=http://localhost:3000
+
+# Gemini API key (optional — enables AI recommendations)
+GEMINI_API_KEY=your_gemini_key_here
+```
+
+## First Run
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser. You should see the Citatra landing page.
+
+## Set Up Your Workspace
+
+1. **Sign up** — create an account using your email or an OAuth provider.
+2. **Create a workspace** — give it a name and enter the primary domain you want to monitor.
+3. **Add prompts** — enter the search prompts (queries) you want to track in AI Overviews. Citatra will begin fetching results automatically.
+4. **Add competitors** — list competitor domains so Citatra can compare their visibility against yours.
+5. **Connect Google Analytics** (optional) — link your GA4 property to enable traffic attribution.
+
+Once your first batch of results comes in, head to the Dashboard to see your visibility metrics.
+
+## Next Steps
+
+You're all set! Explore these features to get deeper insights:
+
+- [Dashboard](/dashboard/docs/features/dashboard) — your central analytics hub with key metrics at a glance
+- [Prompts](/dashboard/docs/features/prompts) — manage and organize the prompts Citatra monitors
+- [Semantic Map](/dashboard/docs/features/semantic-map) — visualize topical relationships and discover content gaps
+
+<Tip>Press ⌘K (Ctrl+K on Windows/Linux) anywhere in the dashboard to open the command palette for quick navigation.</Tip>
+
+<DocsNav prev={{ href: "/docs", label: "Overview" }} next={{ href: "/dashboard/docs/faq", label: "FAQ" }} />

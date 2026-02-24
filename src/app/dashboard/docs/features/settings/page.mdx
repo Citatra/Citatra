@@ -1,0 +1,58 @@
+export const metadata = { title: "Settings" }
+
+<SectionLabel>Management</SectionLabel>
+
+# Settings
+
+<Subtitle>Configure your workspace preferences, API keys, and integrations.</Subtitle>
+
+## Overview
+
+The Settings page is where you configure display preferences, API integrations, notification rules, and workspace metadata. Most settings are available to Owners and Admins only.
+
+## General Settings
+
+- **Workspace name** — the display name shown in the sidebar and workspace switcher
+- **Tracked domain** — the primary domain Citatra monitors across all prompts and audits
+- **Default search location** — the geographic region used for new prompt tracking
+- **Default language** — the language used when querying search engines
+
+## API Keys
+
+Citatra integrates with external services through API keys:
+
+- **SerpApi key** (required) — powers search engine result tracking for your prompts
+- **Gemini API key** — enables AI-powered features like recommendations, audit analysis, and semantic mapping
+- **GA4 property ID** — connects Google Analytics 4 data for traffic attribution and conversion tracking
+
+## Notifications
+
+Configure how and when you receive alerts:
+
+### Email Notifications
+
+- New tracking results available
+- Significant visibility changes (gains or drops)
+- Weekly digest summary
+
+### In-App Notifications
+
+- Competitor alerts when new competitors appear
+- Prompt volume alerts for tracked terms
+- Recommendation updates
+
+## Data Management
+
+- **Export** — download your workspace data in JSON or CSV format for analysis or backup
+- **Clear history** — remove historical tracking data while keeping your configuration
+- **Delete workspace** — permanently remove the workspace and all associated data (Owner only)
+
+## Danger Zone
+
+Workspace deletion is permanent and cannot be undone. All prompts, tracking history, audits, competitors, and team memberships will be removed. Make sure to export any data you need before proceeding.
+
+<Note>API keys are encrypted at rest. Only workspace owners and admins can view or modify API key settings.</Note>
+
+<Tip>Set up notification preferences to stay informed about significant visibility changes without checking the dashboard daily.</Tip>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/team", label: "Team Management" }} />

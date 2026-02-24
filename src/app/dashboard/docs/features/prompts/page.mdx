@@ -1,0 +1,43 @@
+export const metadata = { title: "Prompts" }
+
+<SectionLabel>Core Features</SectionLabel>
+
+# Prompts
+
+<Subtitle>Add and manage the AI prompts you want to track for AI Overview visibility.</Subtitle>
+
+## Overview
+
+Prompts are the core building block of Citatra. Each prompt represents a question or query that gets sent to Google, where Citatra analyzes the resulting AI Overview for citations, positions, and source attribution. By tracking a set of prompts relevant to your business, you build a comprehensive picture of your AI visibility.
+
+## Adding Prompts
+
+To add a prompt, click the **Add Prompt** button from the prompts page or use the command palette. Enter the prompt text exactly as you'd like it queried, select a target location and language, then save. Citatra will begin tracking the prompt on its next analysis cycle.
+
+## Prompt Status
+
+Each prompt has a tracking status that indicates where it is in the analysis pipeline:
+
+- **Pending** — the prompt has been created but hasn't been analyzed yet.
+- **Tracked** — the prompt is actively being monitored and has results available.
+- **Error** — something went wrong during analysis. Check the prompt details for more information.
+
+## Queries & Results
+
+Each prompt generates one or more query results over time. A query result captures the state of the AI Overview at a specific point in time, including your position in the citation list, the cited URL, a snippet of the cited content, and a timestamp. Reviewing query history helps you understand how your visibility changes day to day.
+
+## Bulk Analysis
+
+If you're not sure which prompts to track, the **Bulk Site Analyzer** can help. It scans your existing content and suggests relevant prompts based on the topics and questions your pages already address. This is a fast way to seed a new workspace with high-value prompts without manual guesswork.
+
+## Best Practices
+
+Getting the most out of prompt tracking comes down to how you write and organize your prompts:
+
+- **Use natural language** — phrase prompts the way a real person would ask a question.
+- **Include brand variations** — track both branded and unbranded versions of key queries.
+- **Cover different funnel stages** — mix awareness-level questions with more specific, decision-stage prompts to get a full picture of your visibility across the customer journey.
+
+<Tip>Write prompts the way real users would ask questions — natural, conversational language tends to match how AI Overviews are triggered.</Tip>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/competitors", label: "Competitors" }} next={{ href: "/dashboard/docs/features/sources", label: "Sources" }} />

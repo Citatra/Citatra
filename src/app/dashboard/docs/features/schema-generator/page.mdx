@@ -1,0 +1,46 @@
+export const metadata = { title: "Schema Generator" }
+
+<SectionLabel>Technical Analysis</SectionLabel>
+
+# Schema Generator
+
+<Subtitle>Generate structured data markup optimized for AI Overview visibility.</Subtitle>
+
+## Overview
+
+The Schema Generator creates JSON-LD structured data designed to help search engines and AI models understand your content more effectively. Well-implemented structured data makes it easier for AI systems to extract facts, relationships, and key information from your pages — increasing the likelihood of being cited in AI Overviews.
+
+## Supported Schema Types
+
+Citatra supports generating structured data for the following schema types:
+
+- **FAQPage** — for pages with question-and-answer content
+- **HowTo** — for tutorials, guides, and step-by-step instructions
+- **Article** — for blog posts, news articles, and editorial content
+- **Product** — for product pages with pricing, availability, and reviews
+- **LocalBusiness** — for location-based businesses with address and contact details
+- **Organization** — for company-level information including logo, social profiles, and contact points
+
+## How to Use
+
+1. **Select a page** from your tracked URLs or enter a new URL
+2. **Choose a schema type** that matches the page's content
+3. **Review the pre-filled fields** — Citatra analyzes the page and populates fields automatically where possible
+4. **Customize the output** — edit any fields to ensure accuracy and completeness
+5. **Copy the JSON-LD** — paste the generated markup into your page's `<head>` section or deploy via Google Tag Manager
+
+## Best Practices
+
+- Use **FAQPage** schema for pages that answer common questions — these align naturally with AI Overview queries
+- Use **HowTo** schema for tutorials and process-oriented content
+- Keep structured data **consistent with visible page content** — mismatches can result in penalties
+- **Validate your markup** with the [Google Rich Results Test](https://search.google.com/test/rich-results) after implementation
+- Update structured data whenever page content changes significantly
+
+## AI Overview Optimization
+
+Structured data helps AI models parse your content with greater precision. When an AI system encounters well-structured JSON-LD, it can more confidently extract specific facts, attribute information to your domain, and determine whether your content answers a given query. This doesn't replace quality content, but it removes friction from the extraction process.
+
+<Info>Schema markup doesn't guarantee AI Overview citations, but it helps AI models parse your content more accurately.</Info>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/semantic-map", label: "Semantic Map" }} next={{ href: "/dashboard/docs/features/html-audit", label: "HTML Audit" }} />

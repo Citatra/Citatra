@@ -1,0 +1,72 @@
+export const metadata = { title: "Implicit Backlinks" }
+
+<SectionLabel>Advanced Analytics</SectionLabel>
+
+# Implicit Backlinks
+
+<Subtitle>Discover when AI models reference your content as a source, even without traditional hyperlinks.</Subtitle>
+
+## Overview
+
+Implicit Backlinks are references to your domain found within AI Overview responses. Unlike traditional backlinks — where another website links directly to yours — implicit backlinks occur when AI models cite, mention, or draw from your content in their generated answers.
+
+These references represent a new form of digital authority specific to the AI search era. Tracking them helps you understand how deeply your content has been absorbed by AI models and how often it surfaces in responses.
+
+## How Detection Works
+
+Citatra scans every AI Overview response for signals that your domain is being referenced. The detection engine looks for three types of patterns:
+
+1. **Domain mentions** — explicit references to your website's domain name within the response text
+2. **URL references** — full or partial URLs pointing to your pages in the sources list
+3. **Contextual attribution patterns** — phrases or content structures that closely mirror your published material, even without a direct mention
+
+Each detected reference is classified by type and assigned a confidence score based on the strength of the evidence.
+
+## Backlink Types
+
+Implicit backlinks fall into three categories:
+
+### Direct Citation
+
+Your URL appears in the AI Overview's sources list. This is the strongest form of implicit backlink — the AI model explicitly identifies your page as a reference.
+
+### Contextual Mention
+
+Your brand or domain name is mentioned within the body of the AI Overview response. The AI model references your brand by name, even if it doesn't link directly to a specific page.
+
+### Inferred Attribution
+
+The AI Overview contains content that closely matches material published on your site, suggesting your content influenced the response. These carry a lower confidence score but can reveal how your content shapes AI-generated answers.
+
+## Evidence & Confidence
+
+Every detected implicit backlink includes supporting evidence:
+
+- **Prompt** — the query that triggered the AI Overview containing the reference
+- **Snippet** — the relevant excerpt from the AI Overview response
+- **Confidence score** — a percentage indicating how certain the detection is (Direct Citations score highest, Inferred Attributions score lowest)
+
+You can filter backlinks by confidence threshold to focus on the most reliable detections or expand the view to include lower-confidence matches.
+
+<Info>Implicit backlinks are a new concept specific to AI search. They complement traditional backlink analysis from tools like Ahrefs or Moz.</Info>
+
+## Domain-Level View
+
+The Domain-Level View provides an aggregate picture of your implicit backlink profile:
+
+- **Referring domains** — which domains reference you most frequently in AI Overviews
+- **Backlink trends** — how your implicit backlink count changes over time
+- **New vs. lost backlinks** — track which references appeared recently and which have dropped off
+
+This high-level view is useful for spotting broad shifts in how AI models treat your content as an authoritative source.
+
+## Using Backlink Data
+
+Implicit backlink data becomes most powerful when combined with other Citatra features:
+
+- Cross-reference with [Competitive Gap Analysis](/dashboard/docs/features/competitive-gap) to see whether competitors earning more implicit backlinks also hold stronger citation positions
+- Feed insights into [Recommendations](/dashboard/docs/features/recommendations) to identify content improvements that could increase your AI-referenceability
+
+Monitoring implicit backlinks over time helps you gauge whether your content strategy is building lasting authority in AI-generated search results.
+
+<DocsNav prev={{ href: "/dashboard/docs/features/competitive-gap", label: "Competitive Gap" }} next={{ href: "/dashboard/docs/features/semantic-map", label: "Semantic Map" }} />

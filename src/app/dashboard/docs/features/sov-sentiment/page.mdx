@@ -1,0 +1,68 @@
+export const metadata = { title: "Share of Voice & Sentiment" }
+
+<SectionLabel>Advanced Analytics</SectionLabel>
+
+# Share of Voice & Sentiment
+
+<Subtitle>Measure your brand's visibility share in AI Overviews and track how AI models talk about your brand.</Subtitle>
+
+## Overview
+
+Share of Voice (SoV) quantifies how visible your domain is in AI Overview responses relative to your competitors. Brand Sentiment analysis tracks the tone and context of how AI models mention your brand, giving you insight into both the quantity and quality of your AI search presence.
+
+Together, these metrics help you understand not just whether you're being cited, but how prominently and in what light.
+
+## Share of Voice
+
+Share of Voice is calculated as the percentage of total AI Overview citations that reference your domain:
+
+**SoV = (Your Citations ÷ Total Citations) × 100**
+
+The SoV chart displays your visibility share over time alongside your competitors, making it easy to spot trends and shifts in the competitive landscape. A rising SoV indicates growing authority in AI-generated responses, while a declining share signals that competitors may be gaining ground.
+
+## SoV Metrics
+
+The Share of Voice dashboard tracks four key metrics:
+
+- **Appearance Rate** — the percentage of monitored prompts where your domain appears in the AI Overview response
+- **Citation Share** — your proportion of all source citations across monitored prompts
+- **Position Distribution** — how often your domain appears in the first, second, or third citation position
+- **Trend Direction** — whether your SoV is increasing, stable, or declining over the selected time period
+
+These metrics update daily as new prompt data is collected, giving you a rolling view of your competitive standing.
+
+## Brand Sentiment Analysis
+
+Brand Sentiment analysis uses AI to evaluate how your brand is described within AI Overview responses. Each mention is classified into one of three categories:
+
+- **Positive** — favorable language, recommendations, or endorsements
+- **Neutral** — factual mentions without strong positive or negative framing
+- **Negative** — critical language, warnings, or unfavorable comparisons
+
+The analysis is powered by Gemini, which examines the surrounding context of each brand mention to determine sentiment accurately.
+
+<Note>Brand Sentiment analysis requires a Gemini API key configured in your workspace settings.</Note>
+
+## Sentiment Trends
+
+The Sentiment Trends chart provides daily tracking of sentiment shifts over time. Each day's data point shows the distribution of positive, neutral, and negative mentions, rendered as a stacked area chart.
+
+This view is particularly useful for:
+
+- **Correlating with product changes** — did a new feature launch shift how AI models describe your brand?
+- **Monitoring PR impact** — track whether positive or negative press coverage influences AI-generated descriptions
+- **Detecting emerging issues** — catch sentiment shifts early before they become entrenched in AI model outputs
+
+Use the date range controls to zoom into specific events and compare before-and-after sentiment distributions.
+
+## Competitive Benchmarking
+
+Compare your Share of Voice and sentiment scores directly against each competitor in your workspace. The benchmarking view provides:
+
+- **Side-by-side SoV comparison** — see how your citation share stacks up against each competitor
+- **Sentiment comparison** — understand whether competitors receive more favorable AI-generated descriptions
+- **Gap identification** — highlight areas where competitors outperform you in either visibility or sentiment
+
+This data feeds directly into the [Competitive Gap Analysis](/dashboard/docs/features/competitive-gap) feature for more detailed investigation.
+
+<DocsNav prev={{ href: "/dashboard/docs/features/traffic-attribution", label: "Traffic Attribution" }} next={{ href: "/dashboard/docs/features/competitive-gap", label: "Competitive Gap" }} />

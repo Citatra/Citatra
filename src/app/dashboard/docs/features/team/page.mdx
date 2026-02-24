@@ -1,0 +1,47 @@
+export const metadata = { title: "Team Management" }
+
+<SectionLabel>Management</SectionLabel>
+
+# Team Management
+
+<Subtitle>Invite collaborators and manage access to your workspace.</Subtitle>
+
+## Overview
+
+Workspaces in Citatra support multiple team members, making it easy to collaborate on AI Overview tracking and optimization. You can invite colleagues, assign roles, and control who has access to sensitive settings.
+
+## Roles & Permissions
+
+Each team member is assigned one of three roles:
+
+- **Owner** — full access to all features, can delete the workspace and transfer ownership
+- **Admin** — can manage prompts, competitors, and settings, and invite new members
+- **Member** — can view all data and add prompts, but cannot modify settings or manage the team
+
+## Inviting Members
+
+1. Navigate to the **Team** section of your workspace
+2. Click **Invite Member**
+3. Enter the person's email address
+4. Select their role (Admin or Member)
+5. They'll receive an email invitation with a link to join your workspace
+
+## Managing Members
+
+Once members have joined, you can manage their access at any time:
+
+- **Change roles** — promote a Member to Admin or adjust permissions as needed
+- **Remove members** — revoke access for anyone who no longer needs it
+- **Transfer ownership** — assign another Admin as the new workspace Owner
+
+## Invitation Status
+
+Invitations have three possible states:
+
+- **Pending** — the invitation has been sent but hasn't been accepted yet
+- **Active** — the person has accepted and joined the workspace
+- **Expired** — the invitation wasn't accepted within 7 days and must be resent
+
+<Info>Each workspace has one owner. To transfer ownership, the current owner must assign another admin as the new owner.</Info>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/cms-connectors", label: "CMS Connectors" }} next={{ href: "/dashboard/docs/features/settings", label: "Settings" }} />

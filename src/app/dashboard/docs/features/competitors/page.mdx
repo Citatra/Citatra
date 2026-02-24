@@ -1,0 +1,36 @@
+export const metadata = { title: "Competitors" }
+
+<SectionLabel>Core Features</SectionLabel>
+
+# Competitors
+
+<Subtitle>Track how your competitors appear in AI Overviews alongside your site.</Subtitle>
+
+## Overview
+
+Competitors are the domains you want to benchmark against within AI Overviews. When Citatra analyzes a prompt, it records which competitor domains appear alongside yours, how often they're cited, and in what positions. This gives you a clear picture of who you're up against in AI-generated results.
+
+## Adding Competitors
+
+To add a competitor, navigate to the **Competitors** panel from the sidebar and click **Add Competitor**. Enter the competitor's domain without the `https://` prefix — for example, `example.com` rather than `https://example.com`. Citatra will begin tracking that domain across all prompts in the current workspace automatically.
+
+## Competitive Metrics
+
+For each competitor, Citatra tracks several key data points:
+
+- **Appearance Frequency** — how often the competitor's domain shows up in AI Overviews across your tracked prompts.
+- **Average Position** — the competitor's mean citation position when they do appear.
+- **Citation Count** — the total number of citations the competitor has received.
+- **Head-to-Head Comparison** — a direct comparison of your domain's performance against each competitor on the same prompts.
+
+## Competitive Overview Charts
+
+The competitive overview section provides visual breakdowns of how you stack up against tracked competitors. Bar charts compare appearance rates and citation counts side by side, while the accompanying table lists detailed per-competitor statistics. This makes it straightforward to identify which competitors dominate specific topics.
+
+## Competitive Gap Analysis
+
+For a deeper look at where competitors outperform you — and where you have the edge — visit the [Competitive Gap](/dashboard/docs/features/competitive-gap) page. The gap analysis highlights prompts where competitors appear but you don't, surfacing opportunities to improve your content strategy.
+
+<Info>Competitors are tracked at the workspace level. All prompts automatically track the same set of competitors.</Info>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/dashboard", label: "Dashboard" }} next={{ href: "/dashboard/docs/features/prompts", label: "Prompts" }} />

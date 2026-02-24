@@ -1,0 +1,73 @@
+export const metadata = { title: "FAQ — Citatra" }
+
+<SectionLabel>Getting Started</SectionLabel>
+
+# Frequently Asked Questions
+
+<Subtitle>Answers to the most common questions about Citatra.</Subtitle>
+
+## General
+
+<FAQ question="What is Citatra?">
+Citatra is an AI Overview visibility platform that helps brands and SEO teams understand how they appear inside AI-generated search results. It tracks citations, sentiment, and competitive positioning across multiple AI providers and search engines, giving you actionable data to improve your visibility.
+</FAQ>
+
+<FAQ question="What are AI Overviews?">
+AI Overviews are AI-generated summaries that appear at the top of search engine results pages. Instead of showing only traditional blue links, search engines like Google now synthesize answers from multiple sources and display them directly in the results. These overviews cite specific websites — and Citatra tracks whether your brand is among them.
+</FAQ>
+
+<FAQ question="Can I self-host Citatra?">
+Yes. Citatra is a Next.js application backed by MongoDB, so you can deploy it on any infrastructure that supports Node.js. You'll need your own SerpApi key for data fetching and, optionally, a Gemini API key for AI-powered features. See the [Quick Start](/dashboard/docs/quick-start) guide for setup instructions.
+</FAQ>
+
+## Tracking
+
+<FAQ question="How does prompt tracking work?">
+You define the search prompts (queries) you want to monitor. Citatra periodically sends those prompts to search engines via SerpApi and parses the AI Overview results. It records which domains are cited, the position of each citation, the language used, and how the content is framed — building a historical dataset you can analyze over time.
+</FAQ>
+
+<FAQ question="What is SerpApi?">
+SerpApi is a third-party service that programmatically fetches search engine results pages. Citatra uses SerpApi to retrieve AI Overview data for your tracked prompts. A SerpApi key is required. You can sign up at [serpapi.com](https://serpapi.com).
+</FAQ>
+
+<FAQ question="How often is data updated?">
+Data freshness depends on your configuration. By default, workspaces refresh daily. You can also trigger a manual refresh from the Dashboard at any time.
+</FAQ>
+
+<FAQ question="What is the difference between Prompts and Queries?">
+In Citatra, **Prompts** are the search terms you explicitly add and monitor. **Queries** is a broader term that includes prompts plus any additional search variations Citatra discovers through semantic expansion. Both feed into the same analytics pipeline, but prompts are the ones you directly manage.
+</FAQ>
+
+## Features
+
+<FAQ question="Do I need a Gemini API key?">
+A Gemini API key is optional but recommended. It powers AI-driven features like the Recommendations engine, Semantic Map clustering, and the GEO Audit. Without it, those features are disabled, but all core tracking and analytics still work.
+</FAQ>
+
+<FAQ question="How does Traffic Attribution work?">
+Traffic Attribution connects your AI Overview appearances to real website traffic. By linking your Google Analytics 4 property, Citatra correlates citation timestamps with traffic spikes, estimating how much of your organic traffic originates from AI Overview clicks. See the [Traffic Attribution](/dashboard/docs/features/traffic-attribution) guide for details.
+</FAQ>
+
+<FAQ question="What are implicit backlinks?">
+Implicit backlinks are citations within AI Overviews that reference your domain without a traditional hyperlink. Even though users can't click them directly, these mentions signal authority to both users and search engines. Citatra tracks these alongside explicit links so you get a complete picture of your citation footprint. Learn more in the [Backlinks](/dashboard/docs/features/backlinks) guide.
+</FAQ>
+
+<FAQ question="What is the Semantic Map?">
+The Semantic Map is a visual graph that shows how your tracked prompts relate to each other topically. It uses embeddings to cluster similar prompts, revealing content gaps and thematic opportunities. It's especially useful for content strategy planning. See the [Semantic Map](/dashboard/docs/features/semantic-map) guide for more.
+</FAQ>
+
+## Data & Export
+
+<FAQ question="Can I export data?">
+Yes. Most tables and charts in Citatra support CSV export. Look for the download icon in the toolbar above any data table.
+</FAQ>
+
+<FAQ question="Is there a limit on workspaces?">
+The open-source edition supports one workspace. Each workspace has its own domain, prompts, and team members.
+</FAQ>
+
+<FAQ question="What CMS platforms are supported?">
+Citatra's CMS Connectors currently support WordPress and Webflow, with more platforms on the roadmap. Connectors let you push recommended content changes directly to your CMS without switching tools. See the [CMS Connectors](/dashboard/docs/features/cms-connectors) guide for setup instructions.
+</FAQ>
+
+<DocsNav prev={{ href: "/dashboard/docs/quick-start", label: "Quick Start" }} next={{ href: "/dashboard/docs/shortcuts", label: "Keyboard Shortcuts" }} />

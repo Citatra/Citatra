@@ -1,0 +1,66 @@
+export const metadata = { title: "Recommendations" }
+
+<SectionLabel>Management</SectionLabel>
+
+# Recommendations
+
+<Subtitle>Actionable suggestions to improve your AI Overview visibility based on your tracking data.</Subtitle>
+
+## Overview
+
+Citatra generates AI-powered recommendations by analyzing your tracking data, competitive landscape, and audit results. These actionable items help you prioritize the changes most likely to improve your visibility in AI Overviews.
+
+## How Recommendations Are Generated
+
+Recommendations are synthesized from multiple data sources across your workspace:
+
+- **Prompt tracking results** — which prompts mention you and where you rank
+- **Competitive gap data** — where competitors appear and you don't
+- **GEO audit scores** — content quality and optimization signals
+- **HTML audit results** — technical issues affecting discoverability
+- **Semantic map gaps** — topic areas you haven't covered yet
+
+Gemini analyzes these signals together and produces a prioritized list of actions tailored to your domain's specific situation.
+
+## Recommendation Types
+
+Recommendations fall into three categories:
+
+### Content
+
+- Create new pages targeting prompts where you're absent but competitors appear
+- Improve existing content that scores poorly in GEO audits
+- Add missing topic coverage identified by semantic mapping
+
+### Technical
+
+- Fix HTML issues flagged by audits (missing headings, broken schema, etc.)
+- Add or correct structured data markup
+- Resolve crawlability or indexing problems
+
+### Strategic
+
+- Target new prompts with high volume and low competition
+- Adjust your overall content strategy based on competitive trends
+- Shift focus between prompt categories based on performance data
+
+## Priority Levels
+
+Each recommendation is assigned a priority level:
+
+- **High** — Significant potential impact on visibility. Act on these first.
+- **Medium** — Moderate impact. Schedule these into your regular workflow.
+- **Low** — Incremental improvements. Nice-to-have when you have bandwidth.
+
+## Acting on Recommendations
+
+Every recommendation includes the context you need to take action:
+
+- **What to do** — a clear, specific action step
+- **Why it matters** — the data behind the suggestion
+- **Expected impact** — an estimate of the visibility improvement
+- **Relevant tools** — direct links to the audit, prompt, or competitor data that informed the recommendation
+
+<Tip>Review recommendations weekly after your tracking data refreshes. New data may shift priorities.</Tip>
+
+<DocsNav prev={{ href: "/dashboard/docs/features/geo-audit", label: "GEO Audit" }} next={{ href: "/dashboard/docs/features/cms-connectors", label: "CMS Connectors" }} />

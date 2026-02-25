@@ -1,5 +1,5 @@
 ﻿
-# Citatra - Open Source AI Visibility Monitor
+# Citatra - Open Source AI Visibility Tool
 
 Open-source AI visibility tracking platform. Monitor your brand's presence in Google AI Overviews, track competitors, and analyze sources. Fully self-hostable.
 
@@ -117,7 +117,7 @@ Set up a cron to call `POST /api/cron/fetch-all` on your preferred schedule (e.g
 
 ## 📄 License
 
-MIT - see [LICENSE](LICENSE)
+Citatra Non-Commercial Redistribution License - see [LICENSE](LICENSE)
 
 ---
 

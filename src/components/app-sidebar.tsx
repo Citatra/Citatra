@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut, useSession } from "next-auth/react";
@@ -117,6 +118,7 @@ function NavGroup({ label, items }: { label: string; items: NavItem[] }) {
 export function AppSidebar() {
   const { data: session } = useSession();
   const [mounted, setMounted] = useState(false);
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -135,6 +137,20 @@ export function AppSidebar() {
       <SidebarHeader className="border-b p-4">
         <div className="flex items-center justify-between mb-4">
           <Link href="/dashboard" className="flex items-center gap-2">
+            {mounted ? (
+              <img
+                src={
+                  resolvedTheme === "dark"
+                    ? "/citatra_dark.svg"
+                    : "/citatra_light.svg"
+                }
+                alt="Citatra Logo"
+                className="h-8 w-8 rounded-lg object-cover border border-gray-200 shadow"
+                style={{ background: 'white' }}
+              />
+            ) : (
+              <div className="h-8 w-8 rounded-lg bg-muted/50 animate-pulse border border-gray-200 shadow" />
+            )}
             <span className="text-xl font-bold">Citatra</span>
           </Link>
         </div>
